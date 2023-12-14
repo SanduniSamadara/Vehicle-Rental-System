@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Rent" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="924e8487-2c9e-424a-8bde-ede5d3c49e60">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="573" splitType="Stretch">
+			<staticText>
+				<reportElement x="-11" y="-10" width="540" height="75" forecolor="#312E94" uuid="b24e70cb-960c-454f-b3ff-6f711cf22c01"/>
+				<textElement textAlignment="Center">
+					<font size="26"/>
+				</textElement>
+				<text><![CDATA[ CAR RENTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="40" width="160" height="30" forecolor="#26B547" uuid="9d407b52-82e2-4ecc-bb34-1edd1c678de8"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Vehicle Rent]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="100" width="100" height="30" uuid="761c8d58-a1cc-4ff8-af1c-9a83cab7d933"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Rent ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="130" width="100" height="30" uuid="3e3397bd-9bb6-414d-9b91-f9e52db95927"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Start Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="160" width="100" height="30" uuid="2a1e0145-311b-4c69-9267-a402414f5ac0"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[ReserveDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="190" width="100" height="30" uuid="6a2a3ef0-fcf7-4219-ab73-75e0b511e098"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[CustID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="100" width="100" height="30" uuid="44877f73-617c-4e69-8e4b-f645ff30fe81"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[R001]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="130" width="100" height="30" uuid="7394458a-4dca-485f-a96a-02056587157d"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[2022-11-1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="160" width="100" height="30" uuid="0a0dc492-79e7-4641-95fd-754aa36f2ccd"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[2022-11-3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="190" width="100" height="30" uuid="fb85ba0a-7bf7-41c0-8919-a32ceb815246"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[C001]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="260" width="100" height="30" uuid="2b141cf3-a4e7-4e43-8158-e348ad0851ba"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Rent ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="290" width="100" height="30" uuid="9c092702-2872-4f8a-9737-a4444f83d0fa"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Start Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="480" width="100" height="30" uuid="2707b4e0-fd9f-4dc6-afbf-243c47fee263"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[ReserveDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="360" width="100" height="30" uuid="dad02c9e-11d1-4a48-8428-c8e3c7279365"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[CustID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="260" width="100" height="30" uuid="ae573bd0-736d-44bc-aaf9-fb6cbd7c3e1e"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[R002]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="290" width="100" height="30" uuid="0ff433b2-79a3-4893-b6a7-ebb4e24ae269"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[2022-12-01]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="320" width="100" height="30" uuid="7381fd5c-2a7d-4065-868f-f95c94145de1"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[2022-12-03]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="350" width="100" height="30" uuid="d254be49-f40c-43d0-95bf-192fbfe8fd9d"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[C002]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="420" width="100" height="30" uuid="5594218d-7cae-43b9-9801-ee1979426849"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Rent ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="450" width="100" height="30" uuid="fd44597e-8841-4e55-a0f3-a4593502bbc7"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Start Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="325" width="105" height="30" uuid="0c374c1a-6ac0-42da-ba20-ed98791918a4"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[ReserveDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="510" width="100" height="30" uuid="7ede21f9-f415-4a79-b048-bd959f9f54b9"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[CustID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="420" width="100" height="30" uuid="c480a794-c803-4fb0-86af-da4dfa3a5475"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[R003]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="450" width="100" height="30" uuid="7ed860c6-7785-4852-bb26-d76588506a8c"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[2022-12-3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="480" width="100" height="30" uuid="ce4a7aec-8237-403e-b346-11bf7f20d27e"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[2022-12-5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="510" width="100" height="30" uuid="97491f83-a927-45b3-b73c-da02a7b4e36f"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[C004]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-10" y="245" width="575" height="1" uuid="e737db3e-850f-473c-9c39-b5329f0df17e"/>
+			</line>
+			<line>
+				<reportElement x="5" y="245" width="575" height="1" uuid="1c8439af-b2c7-41c5-98ac-725e26ce61a9"/>
+			</line>
+			<line>
+				<reportElement x="-11" y="400" width="586" height="1" uuid="539716fe-d176-4f58-a18b-056fc1fe2c7c"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="130" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="155" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

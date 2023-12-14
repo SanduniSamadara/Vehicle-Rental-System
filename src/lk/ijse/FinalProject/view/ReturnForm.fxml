@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="925.0" prefWidth="1716.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.FinalProject.controller.ReturnFormController">
+   <children>
+      <ImageView fitHeight="925.0" fitWidth="1716.0" opacity="0.35" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/download%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="730.0" layoutY="22.0" prefHeight="57.0" prefWidth="328.0" text="VEHICLE RETURNS">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="38.0" />
+         </font>
+         <textFill>
+            <LinearGradient endY="0.5566502463054188" startX="0.6847290640394088" startY="1.0">
+               <stops>
+                  <Stop color="#2c1961" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TableView fx:id="tblRent" layoutX="115.0" layoutY="185.0" prefHeight="314.0" prefWidth="1103.0">
+        <columns>
+          <TableColumn fx:id="colrentid" prefWidth="140.0" text="Rent ID" />
+          <TableColumn fx:id="colstartdateid" prefWidth="323.0" text="Start Date" />
+            <TableColumn fx:id="colreservedateId" prefWidth="288.0" text="Reserve Date" />
+            <TableColumn fx:id="colcustomerId" prefWidth="190.0" text="Customer ID" />
+            <TableColumn fx:id="colbutton" prefWidth="161.0" text="Operate" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblVehicleForm" layoutX="115.0" layoutY="588.0" prefHeight="306.0" prefWidth="1120.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="188.0" text="VehicleID" />
+          <TableColumn fx:id="coltype" minWidth="7.999969482421875" prefWidth="210.0" text="Vehicle Type" />
+            <TableColumn fx:id="colnoplate" prefWidth="226.0" text="Vehicle No-Plate" />
+            <TableColumn fx:id="colqty" prefWidth="250.0" text="Vehicle Qty" />
+            <TableColumn fx:id="colcost" prefWidth="245.0" text="DayPerCost" />
+        </columns>
+      </TableView>
+      <Label layoutX="117.0" layoutY="129.0" prefHeight="37.0" prefWidth="155.0" text="RENT FORM" textFill="#860b76">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <Separator layoutX="124.0" layoutY="154.0" prefHeight="30.0" prefWidth="140.0" />
+      <Label layoutX="117.0" layoutY="536.0" prefHeight="37.0" prefWidth="164.0" text="VEHICLE FORM" textFill="#860a75">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <Separator layoutX="117.0" layoutY="565.0" prefHeight="23.0" prefWidth="164.0" />
+      <JFXButton buttonType="RAISED" layoutX="1550.0" layoutY="101.0" onAction="#RepairOnAction" prefHeight="57.0" prefWidth="140.0" style="-fx-background-radius: 14;" stylesheets="@../style/stylesheet.css" text="   REPAIR">
+         <styleClass>
+            <String fx:value="dark" />
+            <String fx:value="ipad" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1550.0" layoutY="739.0" onAction="#UpdateOnAction" prefHeight="57.0" prefWidth="140.0" style="-fx-background-radius: 12;" styleClass="blue" stylesheets="@../style/stylesheet.css" text="UPDATE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></JFXButton>
+      <ImageView fitHeight="57.0" fitWidth="73.0" layoutX="630.0" layoutY="22.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/return.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="37.0" layoutX="1563.0" layoutY="114.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/car-repair.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtqty" labelFloat="true" layoutX="1271.0" layoutY="767.0" prefHeight="37.0" prefWidth="192.0" promptText="Vehicle Availability" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtId" focusColor="#a84040" labelFloat="true" layoutX="1271.0" layoutY="696.0" onAction="#txtIdOnAction" prefHeight="31.0" prefWidth="183.0" promptText="Vehicle Id" unFocusColor="#0410b5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="vehicletype" layoutX="1271.0" layoutY="499.0" opacity="0.0" />
+      <JFXTextField fx:id="vehicledaypercost" layoutX="1457.0" layoutY="558.0" opacity="0.0" />
+      <JFXButton layoutX="1594.0" layoutY="681.0" onAction="#searchOnAction" opacity="0.0" text="Search" />
+      <ImageView fitHeight="57.0" fitWidth="73.0" layoutX="290.0" layoutY="516.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/rent%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="73.0" layoutX="281.0" layoutY="119.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/leasing.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

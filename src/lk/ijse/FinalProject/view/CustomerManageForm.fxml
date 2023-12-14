@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="925.0" prefWidth="1716.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.FinalProject.controller.CustomerManageFormController">
+   <children>
+      <ImageView fitHeight="925.0" fitWidth="1716.0" layoutY="-8.0" opacity="0.76" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/download%20(1).png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="671.0" layoutY="24.0" prefHeight="57.0" prefWidth="544.0" text="CUSTOMER MANAGE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.2512315270935961" startX="1.0" startY="0.7881773399014779">
+               <stops>
+                  <Stop color="#382972" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="122.0" layoutY="160.0" prefHeight="39.0" prefWidth="303.0" text="CUSTOMER ID :" textFill="#530b45">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="493.0" prefHeight="39.0" prefWidth="389.0" text="CUSTOMER CONTACT :" textFill="#530b45">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="331.0" prefHeight="30.0" prefWidth="278.0" text="CUSTOMER NIC :" textFill="#530b45">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="245.0" prefHeight="39.0" prefWidth="361.0" text="CUSTOMER NAME :" textFill="#530b45">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="677.0" layoutY="154.0" onAction="#txtIdOnAction" onKeyReleased="#txtFieldOnKeyRealized" prefHeight="50.0" prefWidth="451.0" promptText="id" style="-fx-background-radius: 15;" />
+      <TextField fx:id="txtContact" layoutX="680.0" layoutY="487.0" prefHeight="50.0" prefWidth="451.0" promptText="Contact" style="-fx-background-radius: 15;" />
+      <TextField fx:id="txtNic" layoutX="677.0" layoutY="321.0" prefHeight="50.0" prefWidth="451.0" promptText="Nic" style="-fx-background-radius: 15;" />
+      <TextField fx:id="txtName" layoutX="677.0" layoutY="239.0" prefHeight="50.0" prefWidth="451.0" promptText="Name" style="-fx-background-radius: 15;" />
+      <TableView fx:id="customerTable" layoutX="107.0" layoutY="566.0" prefHeight="331.0" prefWidth="1511.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="150.00003051757812" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="289.0" text="Name" />
+            <TableColumn fx:id="colNic" prefWidth="204.0" text="N.I.C" />
+            <TableColumn fx:id="colAddress" prefWidth="466.0" text="Address" />
+            <TableColumn fx:id="colContact" prefWidth="227.0" text="Contact Num." />
+            <TableColumn fx:id="colOperate" prefWidth="174.0" text="Operate" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="259.0" fitWidth="255.0" layoutX="1363.0" layoutY="39.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/cust.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="1234.0" layoutY="401.0" onAction="#addOnAction" prefHeight="55.0" prefWidth="119.0" ripplerFill="#9a1e1e" style="-fx-background-color: #3c6382; -fx-background-radius: 15;" text="ADD" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1234.0" layoutY="483.0" onAction="#searchOnAction" prefHeight="55.0" prefWidth="119.0" style="-fx-background-color: #b71540; -fx-background-radius: 15;" text="      SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="1240.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/add-user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="1240.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/magnifying-glass.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="1372.0" layoutY="402.0" onAction="#updateOnAction" prefHeight="55.0" prefWidth="119.0" ripplerFill="#da2c2c" style="-fx-background-color: #079992; -fx-background-radius: 15;" text="     UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="1379.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/changes.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="1372.0" layoutY="483.0" onAction="#deleteOnAction" prefHeight="55.0" prefWidth="119.0" style="-fx-background-color: #fa983a; -fx-background-radius: 15;" text="   DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="1379.0" layoutY="496.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="65.0" layoutX="586.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/customer.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="122.0" layoutY="409.0" prefHeight="39.0" prefWidth="378.0" text="CUSTOMER ADDRESS :" textFill="#530b45">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="680.0" layoutY="400.0" prefHeight="50.0" prefWidth="451.0" promptText="Address" style="-fx-background-radius: 15;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="925.0" prefWidth="1716.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.FinalProject.controller.EmployeeManagementFormController">
+   <children>
+      <ImageView fitHeight="925.0" fitWidth="1716.0" opacity="0.56" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/download%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="670.0" layoutY="8.0" prefHeight="77.0" prefWidth="550.0" text="EMPLOYEE  MANAGE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.7783251231527093" startX="1.0" startY="0.35960591133004927">
+               <stops>
+                  <Stop color="#130954" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="199.0" layoutY="130.0" prefHeight="39.0" prefWidth="312.0" text="EMPLOYEE  ID :" textFill="#721942">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="202.0" prefHeight="39.0" prefWidth="370.0" text="EMPLOYEE  NAME :" textFill="#721942">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="344.0" prefHeight="39.0" prefWidth="429.0" text="EMPLOYEE  CONTACT NO : " textFill="#721942">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="272.0" prefHeight="39.0" prefWidth="378.0" text="EMPLOYEE  ADDRESS :" textFill="#721942">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="414.0" prefHeight="39.0" prefWidth="391.0" text="EMPLOYEE  SALARY : " textFill="#721942">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="731.0" layoutY="124.0" onAction="#txtSearchOnAction" prefHeight="50.0" prefWidth="429.0" promptText="id" style="-fx-background-radius: 15;" />
+      <TextField fx:id="txtSalary" layoutX="731.0" layoutY="408.0" prefHeight="50.0" prefWidth="429.0" promptText="Salary" style="-fx-background-radius: 15;" />
+      <TextField fx:id="txtContact" layoutX="731.0" layoutY="338.0" prefHeight="50.0" prefWidth="429.0" promptText="Contact No" style="-fx-background-radius: 15;" />
+      <TextField fx:id="txtAddress" layoutX="731.0" layoutY="266.0" prefHeight="50.0" prefWidth="429.0" promptText="Address" style="-fx-background-radius: 15;" />
+      <TextField fx:id="txtName" layoutX="731.0" layoutY="192.0" prefHeight="50.0" prefWidth="429.0" promptText="Name" style="-fx-background-radius: 15;" />
+      <ImageView fitHeight="197.0" fitWidth="200.0" layoutX="1431.0" layoutY="36.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/division.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="82.0" layoutX="569.0" layoutY="18.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/business-people.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblEmployee" layoutX="115.0" layoutY="539.0" prefHeight="369.0" prefWidth="1497.0">
+        <columns>
+          <TableColumn fx:id="colEid" prefWidth="133.00003051757812" text="Id" />
+          <TableColumn fx:id="colEname" prefWidth="227.0" text="Name" />
+            <TableColumn fx:id="colEaddress" prefWidth="342.0" text="Address" />
+            <TableColumn fx:id="colEContact" minWidth="0.0" prefWidth="234.0" text="Contact No" />
+            <TableColumn fx:id="colEsalary" minWidth="0.0" prefWidth="209.0" text="Salary" />
+            <TableColumn fx:id="colPosition" prefWidth="186.0" text="Position" />
+            <TableColumn fx:id="operateColId" prefWidth="165.0" text="Operate" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="1304.0" layoutY="390.0" onAction="#AddOnAction" prefHeight="57.0" prefWidth="135.0" style="-fx-background-color: #3c6382; -fx-background-radius: 15;" styleClass="blue" stylesheets="@../style/stylesheet.css" text="ADD" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Add New Emplyoee" />
+         </tooltip>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1464.0" layoutY="457.0" onAction="#DeleteOnAction" prefHeight="57.0" prefWidth="135.0" style="-fx-background-color: #fa983a; -fx-background-radius: 15;" styleClass="blue" stylesheets="@../style/stylesheet.css" text=" DELETE" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Delete Employee" />
+         </tooltip>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1304.0" layoutY="457.0" onAction="#updateOnAction" prefHeight="57.0" prefWidth="135.0" style="-fx-background-color: #b71540; -fx-background-radius: 15;" styleClass="blue" stylesheets="@../style/stylesheet.css" text="UPDATE" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Update Employee" />
+         </tooltip>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1461.0" layoutY="390.0" onAction="#searchOnAction" prefHeight="57.0" prefWidth="135.0" style="-fx-background-color: #079992; -fx-background-radius: 15;" styleClass="blue" stylesheets="@../style/stylesheet.css" text="SEARCH" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Search Employee" />
+         </tooltip>
+      </JFXButton>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="1315.0" layoutY="407.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/add-user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="1471.0" layoutY="407.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/magnifying-glass.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="1308.0" layoutY="474.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/changes.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="1476.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/delete.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="199.0" layoutY="485.0" prefHeight="39.0" prefWidth="391.0" text="EMPLOYEE  POSITION :" textFill="#721942">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPosition" layoutX="729.0" layoutY="475.0" prefHeight="50.0" prefWidth="429.0" promptText="JobPosition" style="-fx-background-radius: 15;" />
+   </children>
+</AnchorPane>

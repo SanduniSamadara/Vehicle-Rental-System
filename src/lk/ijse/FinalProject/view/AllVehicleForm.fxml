@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="925.0" prefWidth="1716.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.FinalProject.controller.AllVehicleFormController">
+   <children>
+      <ImageView fitHeight="925.0" fitWidth="1716.0" opacity="0.59" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/download%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="686.0" layoutY="7.0" prefHeight="88.0" prefWidth="393.0" text="ALL VEHICLE FORM">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="43.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.2019704433497537">
+               <stops>
+                  <Stop color="#321979" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXTextField fx:id="VehicleIdtxt" focusColor="#ab1717" labelFloat="true" layoutX="228.0" layoutY="189.0" onAction="#VehicletxtIdOnAction" onKeyReleased="#txtIdOnAction" prefHeight="37.0" prefWidth="259.0" promptText="VEHICLE ID" unFocusColor="BLACK">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Vehicletypetxt" focusColor="#0f276f" labelFloat="true" layoutX="580.0" layoutY="189.0" prefHeight="37.0" prefWidth="278.0" promptText="VEHICLE TYPE" unFocusColor="BLACK">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="VehiclenoPlatetxt" focusColor="#0f276f" labelFloat="true" layoutX="955.0" layoutY="189.0" prefHeight="37.0" prefWidth="259.0" promptText="VEHICLE NO-PLATE" unFocusColor="BLACK">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="tblAllVehicle" layoutX="228.0" layoutY="266.0" prefHeight="616.0" prefWidth="982.0">
+        <columns>
+          <TableColumn fx:id="colvid" prefWidth="182.0" text="Vehicle ID" />
+          <TableColumn fx:id="colVtype" prefWidth="308.0" text="VehicleType" />
+            <TableColumn fx:id="colNumplate" prefWidth="280.0" text="NumPlate_No" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="qty" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="cost" />
+            <TableColumn fx:id="colOperate" prefWidth="211.0" text="Operater" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="qtyId" layoutX="34.0" layoutY="717.0" opacity="0.0" />
+      <JFXTextField fx:id="txtDayPerCost" layoutX="1035.0" layoutY="97.0" opacity="0.0" />
+      <ImageView fitHeight="156.0" fitWidth="357.0" layoutX="1345.0" layoutY="22.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/vhicle.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="1245.0" layoutY="183.0" onAction="#SearchOnAction" prefHeight="23.0" prefWidth="137.0" style="-fx-background-color: #1dd1a1; -fx-background-radius: 15;" stylesheets="@../style/stylesheet.css" text="SEARCH" textFill="#111010">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="red" />
+            <String fx:value="blue" />
+         </styleClass>
+      </JFXButton>
+      <ImageView fitHeight="23.0" fitWidth="26.0" layoutX="1253.0" layoutY="196.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/magnifying-glass.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="54.0" layoutX="604.0" layoutY="30.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/cars.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

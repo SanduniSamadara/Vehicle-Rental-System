@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="775.0" prefWidth="1174.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.FinalProject.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="776.0" fitWidth="1174.0" opacity="0.89" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/download%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lblCloseEye" fitHeight="33.0" fitWidth="33.0" layoutX="765.0" layoutY="373.0" onMouseClicked="#Close_Eye_ClickOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/eyebrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lblOpenEye" fitHeight="33.0" fitWidth="33.0" layoutX="765.0" layoutY="371.0" onMouseClicked="#Open_Eye_ClickOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/eye.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button layoutX="28.0" layoutY="704.0" mnemonicParsing="false" onAction="#BackOnAction" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color: #2d3436; -fx-background-radius: 10;" text="BACK" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="447.0" layoutY="492.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="45.0" prefWidth="235.0" style="-fx-background-radius: 10; -fx-background-color: #16a085;" text="LOGIN" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></Button>
+      <AnchorPane layoutX="1008.0" layoutY="14.0" opacity="0.58" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: black; -fx-background-radius: 15;">
+         <children>
+            <Label fx:id="lblTime" layoutX="14.0" layoutY="1.0" prefHeight="42.0" prefWidth="125.0" text="23:06:08 AM" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="498.0" layoutY="54.0" text="LOGIN" textFill="#120b51">
+         <font>
+            <Font name="Arial Narrow Bold" size="51.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="95.0" layoutX="517.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/avatar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="26.0" layoutX="335.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/user%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="26.0" layoutX="335.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/padlock.png" />
+         </image>
+      </ImageView>
+      <JFXCheckBox checkedColor="#10229c" layoutX="370.0" layoutY="426.0" text="Remember me" textFill="#2c2929" unCheckedColor="#3b3d40">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXCheckBox>
+      <Label layoutX="708.0" layoutY="426.0" text="Forgot?" textFill="#171717">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <TextField fx:id="txtUserName" layoutX="378.0" layoutY="298.0" prefHeight="42.0" prefWidth="378.0" style="-fx-background-radius: 12;" />
+      <TextField fx:id="txtShowPassword" layoutX="378.0" layoutY="367.0" onAction="#ShowPasswordOnAction" prefHeight="42.0" prefWidth="378.0" style="-fx-background-radius: 12;" />
+      <PasswordField fx:id="txtHiddenPassword" layoutX="378.0" layoutY="367.0" onAction="#HiddenPasswordOnAction" prefHeight="42.0" prefWidth="378.0" style="-fx-background-radius: 12;" />
+   </children>
+</AnchorPane>

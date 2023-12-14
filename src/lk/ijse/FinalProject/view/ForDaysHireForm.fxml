@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="925.0" prefWidth="1716.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.FinalProject.controller.ForDaysHireFormController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="1920.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="658.0" layoutY="24.0" prefHeight="57.0" prefWidth="401.0" text=" FOR LONG DAY HIRE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="38.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4482758620689655" endY="1.0" startX="0.44827586206896547">
+               <stops>
+                  <Stop color="#210e57" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="101.0" layoutY="148.0" prefHeight="39.0" prefWidth="205.0" text="VEHICLE ID :" textFill="#782222">
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="910.0" layoutY="225.0" prefHeight="31.0" prefWidth="233.0" text="VEHICLE STATUS :" textFill="#782222">
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="221.0" prefHeight="39.0" prefWidth="315.0" text="NUMBER-PLATE ID :" textFill="#782222">
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="910.0" layoutY="148.0" prefHeight="39.0" prefWidth="222.0" text="VEHICLE TYPE :" textFill="#782222">
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="371.0" prefHeight="39.0" prefWidth="294.0" text="PER DAY WEEK :" textFill="#782222">
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="585.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/add.png" />
+         </image>
+      </ImageView>
+      <TableView layoutX="102.0" layoutY="613.0" prefHeight="363.0" prefWidth="1642.0">
+         <columns>
+            <TableColumn prefWidth="115.0" text="Vehicle Id" />
+            <TableColumn prefWidth="203.0" text="Type" />
+            <TableColumn prefWidth="199.0" text="Number Plate" />
+            <TableColumn minWidth="0.0" prefWidth="185.0" text="Status" />
+            <TableColumn minWidth="0.0" prefWidth="166.0" text="Driver Cost" />
+            <TableColumn prefWidth="196.0" text="Per Day Payment" />
+            <TableColumn prefWidth="184.0" text="Per Day Week" />
+            <TableColumn prefWidth="168.0" text="Advance Payment" />
+            <TableColumn prefWidth="119.0" text="Total Payment" />
+            <TableColumn prefWidth="106.0" text="Operater" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="1229.0" layoutY="426.0" prefHeight="57.0" prefWidth="131.0" style="-fx-background-radius: 15; -fx-background-color: #0a3d62;" styleClass="blue" stylesheets="@../style/stylesheet.css" text="ADD" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Add New Vehicle" />
+         </tooltip>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1381.0" layoutY="426.0" prefHeight="57.0" prefWidth="131.0" style="-fx-background-color: #b71540;" styleClass="red" stylesheets="@../style/stylesheet.css" text="     DELETE" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Delete New Vehicle" />
+         </tooltip>
+      </JFXButton>
+      <ImageView fitHeight="37.0" fitWidth="41.0" layoutX="1388.0" layoutY="436.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="41.0" layoutX="1235.0" layoutY="436.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/car%20(1).png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="1217.0" layoutY="221.0" prefHeight="39.0" prefWidth="262.0" promptText="Availability" style="-fx-background-radius: 15;" />
+      <TextField layoutX="406.0" layoutY="148.0" prefHeight="39.0" prefWidth="262.0" promptText="ID" style="-fx-background-radius: 15;" />
+      <TextField layoutX="1217.0" layoutY="148.0" prefHeight="39.0" prefWidth="262.0" promptText="Enter Vehicle Type" style="-fx-background-radius: 15;" />
+      <TextField layoutX="406.0" layoutY="221.0" prefHeight="39.0" prefWidth="262.0" promptText="NO -PLATE" style="-fx-background-radius: 15;" />
+      <TextField layoutX="406.0" layoutY="294.0" prefHeight="39.0" prefWidth="262.0" promptText="Rs" style="-fx-background-radius: 15;" />
+      <Label layoutX="101.0" layoutY="294.0" prefHeight="39.0" prefWidth="255.0" text="PER DAY PAYMENT :" textFill="#782222">
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="406.0" layoutY="371.0" prefHeight="39.0" prefWidth="262.0" promptText="Rs" style="-fx-background-radius: 15;" />
+      <Label layoutX="102.0" layoutY="444.0" prefHeight="39.0" prefWidth="276.0" text="ADVANCE PAYMENT : " textFill="#782222">
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="406.0" layoutY="444.0" prefHeight="39.0" prefWidth="262.0" promptText="Rs" style="-fx-background-radius: 15;" />
+      <Label layoutX="106.0" layoutY="520.0" prefHeight="39.0" prefWidth="246.0" text="TOTAL PAYMENT : " textFill="#782222">
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="406.0" layoutY="520.0" prefHeight="39.0" prefWidth="262.0" promptText="Rs" style="-fx-background-radius: 15;" />
+      <Label layoutX="910.0" layoutY="298.0" prefHeight="31.0" prefWidth="205.0" text="DRIVER COST :" textFill="#782222">
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1217.0" layoutY="294.0" prefHeight="39.0" prefWidth="262.0" promptText="Rs" style="-fx-background-radius: 15;" />
+      <ImageView fitHeight="294.0" fitWidth="304.0" layoutX="1553.0" layoutY="94.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/hire.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="101.0" layoutY="29.0" onAction="#backOnAction" prefHeight="50.0" prefWidth="119.0" stylesheets="@../style/stylesheet.css" text="BACK">
+         <styleClass>
+            <String fx:value="bevel" />
+            <String fx:value="ipad" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
